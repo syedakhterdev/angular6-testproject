@@ -1,0 +1,56 @@
+.form-control-borderless {
+  border: none;
+}
+
+.form-control-borderless:hover,
+.form-control-borderless:active,
+.form-control-borderless:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.homepage {
+  height: 100vh;
+  position: relative;
+  background: url('https://www.nextremitysolutions.com/wp-content/uploads/2013/12/plain_background.png');
+}
+
+.homepage h3 {
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  top: 32%;
+  width: 100%;
+  font-size: 40px;
+}
+
+
+.searchpanel {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.searchform {
+  background: #f7f7f7;
+}
+
+.searchbox {
+  margin-right: 20px;
+}
+
+.btn-search {
+  background: #000;
+  color: #fff;
+}
+
+.example-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.example-container>* {
+  width: 100%;
+}

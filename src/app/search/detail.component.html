@@ -1,0 +1,36 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h2 class="display-4 text-center">Product Details</h2>
+  </div>
+</div>
+<div class="item-details-wrap" *ngIf="product">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <div class="item-thumbnail-lg">
+          <img class="img-responsive" src={{product[0].image}} alt="Item View">
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="item-details">
+          <h3>{{product[0].name}}</h3>
+          <p>{{product[0].description}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="item-form">
+          <div class="form-group">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Email" [(ngModel)]="search" name="search">
+            </mat-form-field>
+          </div>
+          <div class="form-group text-center">
+            <button mat-flat-button type="submit" color="primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
